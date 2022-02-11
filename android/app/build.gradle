@@ -1,0 +1,102 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+apply plugin: 'com.android.application'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+apply plugin: 'com.google.gms.google-services'
+dependencies {
+  implementation 'com.android.support:multidex:1.0.3' 
+  implementation platform('com.google.firebase:firebase-bom:26.5.0')
+  implementation 'com.google.firebase:firebase-messaging'
+  implementation 'com.google.mlkit:image-labeling-custom:16.3.1'
+}
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.valuable_trash.val_trash"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+    signingConfigs {
+       release {
+           keyAlias keystoreProperties['keyAlias']
+           keyPassword keystoreProperties['keyPassword']
+           storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+           storePassword keystoreProperties['storePassword']
+       }
+   }
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.release
+            aaptOptions { 
+                ignoreAssetsPattern '!mlkit_pose:!mlkit_label_default_model:!hobbes.tflite:!models:!mlkit-ocr-models:!mlkit_odt_default_classifier:!mlkit_odt_localizer:!mlkit_barcode_models:'
+            }
+            minifyEnabled true
+            shrinkResources true
+            useProguard true
+        }
+        debug{
+            aaptOptions {
+                ignoreAssetsPattern '!mlkit_pose:!mlkit_label_default_model:!hobbes.tflite:!models:!mlkit-ocr-models:!mlkit_odt_default_classifier:!mlkit_odt_localizer:!mlkit_barcode_models:'
+            }
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+    //aaptOptions {
+        //noCompress 'tflite'
+        //noCompress 'lite'
+        //noCompress 'assets/'
+        //noCompress 'assets/tflite/model.tflite'
+    //}
+    packagingOptions {
+        exclude 'lib/**/libtranslate_jni.so'
+        exclude 'lib/**/libdigitalink.so'
+        exclude 'lib/**/libxeno_native.so'
+        //exclude 'lib/**/libmlkitcommonpipeline.so'
+        exclude 'lib/**/libbarhopper_v2.so'
+        exclude 'lib/**/libbarhopper_v3.so'
+        exclude 'lib/**/libpredictor_jni.so'
+        exclude 'lib/**/libtextclassifier3_jni_tclib.so'
+        exclude 'lib/**/libface_detector_v2_jni.so'
+        exclude 'lib/**/libtensorflowlite_jni.so'
+        exclude 'lib/**/liblanguage_id_jni.so'
+        exclude 'lib/**/liblanguage_id_l2c_jni.so'
+        exclude 'lib/**/libmlkit_ocr_pipeline.so'
+    }
+}
+
+flutter {
+    source '../..'
+}
