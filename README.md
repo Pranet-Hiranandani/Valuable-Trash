@@ -10,7 +10,7 @@ Excess waste is very harmful to our environment. While there are many campaigns 
 
 - From over 300 million tonnes of plastic produced annually, around 50% of it is single-use plastic.
 - More than 8 million tonnes of plastic end up into the oceans which have a horrendous impact on life in water and around it.
-- Over 100,000 marine animals die every year from plastic entanglement and ingestion
+- Over 100,000 marine animals die every year from plastic entanglement and ingestion.
 
 ## How it works
 
@@ -22,6 +22,17 @@ Excess waste is very harmful to our environment. While there are many campaigns 
 ## AI Model
 
 - Dataset comprises of 100 imagegs each of Plastic Bottles, Plastic Bags, Plastic Boxes, Soda Cans, Plastic Cutlery and Plastic Glasses.
-- Used the MobileNetv2 CNN model to train the dataset
-- Accuracy of 92% and loss of 0.19
+- Used the MobileNetv2 CNN model to train the dataset.
+- Accuracy of 92% and loss of 0.19.
 
+## Additional Features
+
+- The user can locate Nearby Recycling centers using Google Maps.
+- There is an option for the user to contribute their own ideas to the Valuable Trash community.
+- The user can access latest articles related to climate change as well as tips to reduce their carbon footprint.
+
+## Integration with Firebase
+
+- All tutorials are stored on the cloud, Firestore and Firebase Storage.
+- Created a Python Application to easily upload new ideas and tutorials.
+- Used Firebase Authentication to allow the user to sign in for a more personalised experience.
