@@ -38,17 +38,17 @@ dependencies:
   cached_network_image: 
   webview_flutter: 
   google_sign_in: 
-  auto_size_text: ^3.0.0-nullsafety.0 
+  auto_size_text: 
   google_fonts: 
   share_plus: 
   permission_handler: 
   http: 
-  image_gallery_saver: ^1.6.9 
+  image_gallery_saver: 
   screenshot: 
   path_provider: 
   url_launcher: 
   percent_indicator:
-  flutter_webview_pro: ^1.0.0
+  flutter_webview_pro: 
   carousel_slider:
   line_icons:
   hive:
