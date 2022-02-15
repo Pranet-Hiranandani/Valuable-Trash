@@ -4,6 +4,12 @@
 
 Valuable Trash is an intuitive and innovative app that uses advanced Artificial Intelligence to help you repurpose your waste. It enables you to practically and creatively repurpose your waste, making trash valuable. [Download it now!](http://bit.ly/2YTOONE)
 
+## Achievements
+
+- Won the [Climate Creator's Award](https://www.appsforgood.org/awards/2021/climate-creators) at the Apps for Good Awards 2021
+- Presented at the [AI Club Student Research Symposium](https://www.corp.aiclub.world/ai-app-to-reuse-waste)
+- Won the First Prize at the [IIT Young Inventor Techfest 2021](https://www.facebook.com/WitBlox/photos/a.970418739769538/2551565008321562/)
+
 ## Problem Statement
 
 Excess waste is very harmful to our environment. While there are many campaigns for this very few give practical and simple solutions. Even people who are concerned about the environment find it extremely hard to repurpose their waste. They run out of ideas and end up throwing it as trash.
