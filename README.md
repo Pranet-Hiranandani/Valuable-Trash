@@ -20,7 +20,7 @@ Excess waste is harmful to our environment. While there are many campaigns for t
 
 ## How it works
 
-- Users hold their camera near the waste that they want to reuse.
+- Users hold their camera near the waste that they want to repurpose.
 - A machine learning algorithm classifies the waste based upon its type, material and size.
 - The user gets a list of ideas to repurpose their waste with separate difficulty levels.
 - An innovative solution is provided with a step-by-step tutorial on how to repurpose it. Users can follow a step-by-step tutorial to easily repurpose their waste instead of throwing it away.
