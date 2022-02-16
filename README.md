@@ -12,7 +12,7 @@ Valuable Trash is an intuitive and innovative app that uses advanced Artificial 
 
 ## Problem Statement
 
-Excess waste is very harmful to our environment. While there are many campaigns for this very few give practical and simple solutions. Even people who are concerned about the environment find it extremely hard to repurpose their waste. They run out of ideas and end up throwing it as trash.
+Excess waste is harmful to our environment. While there are many campaigns for this very few give practical and simple solutions. Even people who are concerned about the environment find it extremely hard to repurpose their waste. They run out of ideas and end up throwing it as trash.
 
 - From over 300 million tonnes of plastic produced annually, around 50% of it is single-use plastic.
 - More than 8 million tonnes of plastic end up into the oceans which have a horrendous impact on life in water and around it.
@@ -33,12 +33,12 @@ Excess waste is very harmful to our environment. While there are many campaigns 
 
 ## Additional Features
 
-- The user can locate Nearby Recycling centers using Google Maps.
+- The user can locate nearby Recycling centers using Google Maps.
 - There is an option for the user to contribute their own ideas to the Valuable Trash community.
 - The user can access latest articles related to climate change as well as tips to reduce their carbon footprint.
 
 ## Integration with Firebase
 
-- All tutorials are stored on the cloud, Firestore and Firebase Storage.
+- All tutorials are stored on the cloud, using Firestore and Firebase Storage.
 - Created a Python Application to easily upload new ideas and tutorials.
 - Used Firebase Authentication to allow the user to sign in for a more personalised experience.
