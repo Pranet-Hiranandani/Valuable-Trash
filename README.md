@@ -28,7 +28,7 @@ Excess waste is harmful to our environment. While there are many campaigns for t
 
 ## AI Model
 
-- Dataset comprises of 100 imagegs each of Plastic Bottles, Plastic Bags, Plastic Boxes, Soda Cans, Plastic Cutlery and Plastic Glasses.
+- Dataset comprises of 100 images each of Plastic Bottles, Plastic Bags, Plastic Boxes, Soda Cans, Plastic Cutlery and Plastic Glasses.
 - Used the MobileNetv2 CNN model to train the dataset.
 - Accuracy of 92% and loss of 0.19.
 
