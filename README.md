@@ -7,9 +7,10 @@ Valuable Trash is an intuitive and innovative app that uses advanced Artificial 
 ## Achievements
 
 - Won the [Climate Creator's Award](https://www.appsforgood.org/awards/2021/climate-creators) at the Apps for Good Awards 2021
-- Presented at the [AI Club Student Research Symposium](https://www.corp.aiclub.world/symposium21/ai-app-to-reuse-waste)
+- Presented at the [AI Club Student Research Symposium 2021](https://www.corp.aiclub.world/symposium21/ai-app-to-reuse-waste)
 - Won the First Prize at the [IIT Young Inventor Techfest 2021](https://www.facebook.com/WitBlox/photos/a.970418739769538/2551565008321562/)
 - Featured on [IndiaAI](https://indiaai.gov.in/article/15-year-old-s-valuable-trash-a-promise-for-sustainable-tomorrow)
+- Won the 5th Prize at the [Vivo Ignite Science and Innovation Awards](https://vivoignite.com/)
 
 ## Problem Statement
 
